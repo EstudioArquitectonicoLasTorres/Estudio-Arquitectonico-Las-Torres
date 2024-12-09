@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes Arquitectónicos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: url('fondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #2C3E50;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #000;
+            color: white;
+        }
+        .header h1 {
+            font-size: 3.5em;
+            margin: 0;
+        }
+        .header h2 {
+            font-size: 1.75em;
+            margin: 0;
+        }
+        .header img {
+            width: 100px;
+            height: auto;
+        }
+        .tagline {
+            font-size: 1.2em;
+            text-align: left;
+            margin-top: 10px;
+            color: white;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .category {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .category img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #000;
+        }
+        .category h2 {
+            margin: 0;
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.5em;
+        }
+        .category p {
+            padding: 15px;
+            font-size: 1em;
+            color: #E5E5E5;
+        }
+        .contact-info {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+        .footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with title and logo -->
+    <div class="header">
+        <div>
+            <h1>Estudio Arquitectonico</h1>
+            <h2>Las Torres</h2>
+            <p class="tagline">Comprometidos con la excelencia, ofreciendo soluciones arquitectónicas confiables y de calidad para tu futuro.</p>
+        </div>
+        <img src="logo.jpg" alt="Logo Estudio Arquitectonico">
+    </div>
+
+    <!-- Main content with categories -->
+    <div class="container">
+        <div class="category">
+            <img src="plano-arquitectonico.jpg" alt="Plano Arquitectónico">
+            <h2>Plano Arquitectónico</h2>
+            <p><strong>Planta:</strong> Diseño de la planta para cada nivel del edificio.</p>
+        </div>
+        <div class="category">
+            <img src="plano-fachada.jpg" alt="Plano de Fachada">
+            <h2>Plano de Fachada</h2>
+            <p><strong>Plano de Fachada:</strong> Vistas externas del edificio desde todos los lados.</p>
+        </div>
+        <div class="category">
+            <img src="plano-corte.jpg" alt="Plano de Corte">
+            <h2>Plano de Corte</h2>
+            <p><strong>Plano de Corte:</strong> Secciones transversales o longitudinales que muestran la distribución interior.</p>
+        </div>
+        <div class="category">
+            <img src="plano-cimentacion.jpg" alt="Plano de Cimentación">
+            <h2>Plano de Cimentación</h2>
+            <p><strong>Plano de Cimentación:</strong> Diseño de la base estructural que soporta todo el peso del edificio.</p>
+        </div>
+        <div class="category">
+            <img src="plano-estructural.jpg" alt="Plano de Estructura">
+            <h2>Plano Estructural</h2>
+            <p><strong>Cimentación:</strong> Diseño de la base para soportar el edificio.</p>
+        </div>
+        <div class="category">
+            <img src="plano-distribucion.jpg" alt="Plano de Distribución">
+            <h2>Plano de Distribución</h2>
+            <p><strong>Plano de Distribución:</strong> Distribución y dimensiones de losas y vigas.</p>
+        </div>
+        <div class="category">
+            <img src="plano-instalacion-electrica.jpg" alt="Plano de Instalación Eléctrica">
+            <h2>Plano de Instalación Eléctrica</h2>
+            <p><strong>Distribución Eléctrica:</strong> Diseño del sistema eléctrico para enchufes, interruptores y luminarias.</p>
+        </div>
+        <div class="category">
+            <img src="plano-instalacion-hidraulica.jpg" alt="Plano de Instalación Hidráulica">
+            <h2>Plano de Instalación Hidráulica</h2>
+            <p><strong>Plano de Instalación Hidráulica:</strong> Sistema de diseño para el suministro de agua.</p>
+        </div>
+        <div class="category">
+            <img src="plano-drenaje.jpg" alt="Plano de Instalación de Drenaje">
+            <h2>Plano de Instalación de Drenaje</h2>
+            <p><strong>Plano de Instalación de Drenaje:</strong> Sistemas de drenaje y alcantarillado.</p>
+        </div>
+        <div class="category">
+            <img src="plano-acabados.jpg" alt="Planificación de Acabados">
+            <h2>Planificación de Acabados</h2>
+            <p><strong>Planificación de Acabados:</strong> Detalles sobre materiales, colores y texturas para pisos y muros.</p>
+        </div>
+        <div class="category">
+            <img src="plano-climatizacion.jpg" alt="Plano de Climatización">
+            <h2>Plano de Climatización</h2>
+            <p><strong>Plano de Climatización:</strong> Sistemas de calefacción, ventilación y aire acondicionado.</p>
+        </div>
+        <div class="category">
+            <img src="plano-instalacion-piscina.jpg" alt="Plano de Instalación de Piscina y Fuentes Decorativas">
+            <h2>Plano de Instalación de Piscina y Fuentes Decorativas</h2>
+            <p><strong>Plano de Instalación de Piscina y Fuentes Decorativas:</strong> Diseño y distribución de la piscina y las fuentes decorativas dentro del proyecto.</p>
+        </div>
+        <div class="category">
+            <img src="render.jpg" alt="Render">
+            <h2>Render</h2>
+            <p><strong>Render:</strong> Representación gráfica 3D del diseño arquitectónico final.</p>
+        </div>
+    </div>
+
+    <!-- Contact Information Section -->
+    <div class="contact-info">
+        <p>Puede realizar la cotización para su proyecto desde los siguientes medios:</p>
+        <p>WhatsApp: 5539448685</p>
+        <p>Correo Electrónico: planosarquitectonicoslastorres@gmail.com</p>
+    </div>
+
+    <!-- Footer with copyright notice -->
+    <div class="footer">
+        <p>&copy; 2024 Estudio Arquitectonico Las Torres. Todos los derechos reservados.</p>
+    </div>
+</body>
+</html>

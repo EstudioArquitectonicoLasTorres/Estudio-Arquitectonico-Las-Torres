@@ -14,35 +14,40 @@
         }
         .header {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
             padding: 20px;
             background-color: #000;
             color: white;
         }
+        .header div {
+            flex: 1 1 100%;
+            text-align: center;
+        }
         .header h1 {
-            font-size: 3.5em;
+            font-size: 2.5em;
             margin: 0;
         }
         .header h2 {
-            font-size: 1.75em;
+            font-size: 1.5em;
             margin: 0;
         }
         .header img {
-            width: 100px;
+            width: 80px;
             height: auto;
+            margin: 10px auto;
         }
         .tagline {
-            font-size: 1.2em;
-            text-align: left;
+            font-size: 1em;
             margin-top: 10px;
             color: white;
         }
         .container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            max-width: 1200px;
+            max-width: 100%;
             margin: auto;
             padding: 20px;
         }
@@ -63,11 +68,11 @@
             color: white;
             text-align: center;
             padding: 10px;
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
         .category p {
             padding: 15px;
-            font-size: 1em;
+            font-size: 0.9em;
             color: #E5E5E5;
         }
         .contact-info {
@@ -75,14 +80,36 @@
             color: white;
             text-align: center;
             padding: 20px;
-            font-size: 1.2em;
+            font-size: 1em;
         }
         .footer {
             background-color: #000;
             color: white;
             text-align: center;
-            padding: 20px;
-            font-size: 1em;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .header h2 {
+                font-size: 1.2em;
+            }
+            .tagline {
+                font-size: 0.9em;
+            }
+        }
+        @media (max-width: 480px) {
+            .header img {
+                width: 60px;
+            }
+            .container {
+                padding: 10px;
+            }
+            .category p {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
@@ -90,11 +117,11 @@
     <!-- Header with title and logo -->
     <div class="header">
         <div>
-            <h1>Estudio Arquitectonico</h1>
+            <h1>Estudio Arquitectónico</h1>
             <h2>Las Torres</h2>
             <p class="tagline">Comprometidos con la excelencia, ofreciendo soluciones arquitectónicas confiables y de calidad para tu futuro.</p>
         </div>
-        <img src="logo.jpg" alt="Logo Estudio Arquitectonico">
+        <img src="logo.jpg" alt="Logo Estudio Arquitectónico">
     </div>
 
     <!-- Main content with categories -->
@@ -175,7 +202,7 @@
 
     <!-- Footer with copyright notice -->
     <div class="footer">
-        <p>&copy; 2024 Estudio Arquitectonico Las Torres. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Estudio Arquitectónico Las Torres. Todos los derechos reservados.</p>
     </div>
 </body>
 </html>
